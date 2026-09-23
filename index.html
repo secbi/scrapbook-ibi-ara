@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ibi & Ara • 6 Bulan</title>
+<title>Buku Kenangan Ibi &amp; Ara &bull; 6 Bulan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Caveat:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -11,337 +11,373 @@
 </head>
 <body>
 
-<!-- ==================== SAMUL ==================== -->
-<header id="cover" class="cover">
-  <div class="cover-paper">
-    <!-- washi tapes -->
-    <div class="tape tape-1"></div>
-    <div class="tape tape-2"></div>
-    <div class="tape tape-3"></div>
-    <div class="tape tape-4"></div>
+<div class="scene">
+  <p class="book-hint caveat">&larr; balik halaman dengan panah atau geser &rarr;</p>
 
-    <p class="cover-kicker caveat">sebuah scrapbook kecil untuk</p>
-    <h1 class="cover-title">Ibi <span class="heart">&hearts;</span> Ara</h1>
-    <p class="cover-subtitle dancing">6 bulan perjalanan cinta kita</p>
-    <p class="cover-dates">4 April 2026 &mdash; 4 Oktober 2026</p>
+  <div class="book" id="book">
 
-    <div class="cover-flourish">&nabla;&nabla;&nabla;</div>
-    <p class="cover-note caveat">dibuat dengan penuh rasa sayang, untuk Ara tersayang</p>
-
-    <button id="openBtn" class="open-btn">
-      <span>Buka Scrapbook</span>
-      <span class="btn-heart">&hearts;</span>
-    </button>
-  </div>
-</header>
-
-<!-- ==================== NAV ==================== -->
-<nav id="navbar" class="navbar hidden">
-  <span class="nav-logo caveat">Ibi &hearts; Ara</span>
-  <div class="nav-links">
-    <a href="#timeline">Timeline</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#jar">Memory Jar</a>
-    <a href="#momen">Momen</a>
-    <a href="#lagu">Lagu</a>
-    <a href="#surat">Surat</a>
-    <a href="#doa">Doa</a>
-  </div>
-</nav>
-
-<!-- ==================== TIMELINE ==================== -->
-<section id="timeline" class="section">
-  <h2 class="section-title caveat"><span class="tape-inline"></span>Perjalanan Kita<span class="tape-inline"></span></h2>
-  <p class="section-sub">6 bulan, 6 bulan yang dipenuhi tawa, cerita, dan kamu.</p>
-
-  <div class="timeline">
-    <div class="tl-item">
-      <div class="tl-line"><span class="tl-dot">1</span></div>
-      <figure class="polaroid rot-l" data-caption="4 April 2026">
-        <img src="photos/first-date/01.jpg" alt="First date">
-        <figcaption class="caveat">First date kita &mdash; 4 April 2026</figcaption>
-      </figure>
-      <div class="tl-text">
-        <h3 class="caveat pencil">Awal dari segalanya</h3>
-        <p>Aku masih ingat deg-degannya. Hari pertama aku sadar, kamu itu seseorang yang istimewa bagi hidupku.</p>
-      </div>
-    </div>
-
-    <div class="tl-item flip">
-      <div class="tl-line"><span class="tl-dot">2</span></div>
-      <figure class="polaroid rot-r" data-caption="20 Mei 2026">
-        <img src="photos/ultah-ibi/01.jpg" alt="Ultah Ibi">
-        <figcaption class="caveat">Ultahku ke-20 &mdash; 20 Mei 2026</figcaption>
-      </figure>
-      <div class="tl-text">
-        <h3 class="caveat pencil">Satu tahun lagi</h3>
-        <p>Satu lagi tahun dalam hidupku, dan kamu ada di dalamnya. Doaku sederhana: semoga kamu selalu di sampingku.</p>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-line"><span class="tl-dot">3</span></div>
-      <div class="polaroid-stack">
-        <figure class="polaroid rot-l" data-caption="7 Juni 2026">
-          <img src="photos/second-date/01.jpg" alt="Second date Sakuta">
-          <figcaption class="caveat">Sakuta Coffee, Bintaro</figcaption>
-        </figure>
-        <figure class="polaroid rot-r" data-caption="7 Juni 2026">
-          <img src="photos/second-date/03.jpg" alt="Second date keduanya">
-          <figcaption class="caveat">Nostalgia favorit kita</figcaption>
-        </figure>
-      </div>
-      <div class="tl-text">
-        <h3 class="caveat pencil">Kopi, tawa, dan kamu</h3>
-        <p>Second date di Sakuta Coffee, Bintaro. Sampai sekarang tempat itu jadi favorit kita berdua.</p>
-        <div class="thumb-row">
-          <img src="photos/second-date/02.jpg" alt="sakuta 2">
-          <img src="photos/second-date/04.jpg" alt="sakuta 4">
-          <img src="photos/second-date/05.jpg" alt="sakuta 5">
+    <!-- ============ P0: SAMPUL ============ -->
+    <section class="page cover current" data-title="Sampul">
+      <div class="front">
+        <div class="page-inner">
+          <div class="cover-kraft caveat">sebuah buku kenangan kecil untuk</div>
+          <h1 class="cover-title">Ibi <span class="heart">&hearts;</span> Ara</h1>
+          <p class="cover-sub dancing">Enam Bulan Perjalanan Cinta Kita</p>
+          <p class="cover-dates">4 April 2026 &mdash; 4 Oktober 2026</p>
+          <div class="cover-rule"></div>
+          <p class="cover-note caveat">di dalam buku ini ada cerita,<br>foto, dan doa-doa kecil kita</p>
+          <button id="openBook" class="open-btn"><span>Buka Buku &nbsp;</span><span class="bh">&hearts;</span></button>
         </div>
       </div>
-    </div>
+      <div class="backface"></div>
+    </section>
 
-    <div class="tl-item flip">
-      <div class="tl-line"><span class="tl-dot">4</span></div>
-      <div class="polaroid-stack">
-        <figure class="polaroid rot-r" data-caption="6 Agustus 2026">
-          <img src="photos/ultah-ara/01.jpg" alt="Ultah Ara">
-          <figcaption class="caveat">Ultah Ara ke-21</figcaption>
-        </figure>
-        <figure class="polaroid rot-l" data-caption="6 Agustus 2026">
-          <img src="photos/ultah-ara/02.jpg" alt="Ultah Ara bintaro">
-          <figcaption class="caveat">Bintaro Xchange</figcaption>
-        </figure>
-      </div>
-      <div class="tl-text">
-        <h3 class="caveat pencil">Hari paling ceria</h3>
-        <p>Merayakan ultah ke-21 kamu di Bintaro Xchange. Senyummu waktu kaget itu, nggak akan pernah aku lupa.</p>
-        <div class="thumb-row">
-          <img src="photos/ultah-ara/03.jpg" alt="ultah ara 3">
-          <img src="photos/ultah-ara/04.jpg" alt="ultah ara 4">
+    <!-- ============ P1: KATA PENGANTAR I ============ -->
+    <section class="page" data-title="Kata Pengantar">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat">Kata Pengantar</h2>
+          <p class="page-kicker caveat">bagian pertama, dari hati</p>
+          <p>Ada enam bulan yang biasanya lewat tanpa jejak. Enam bulan yang bagi banyak orang hanya sederet tanggal di kalender. Tapi enam bulan ini, bagiku, adalah halaman-halaman yang ingin kutulis pelan-pelan &mdash; supaya jangan ada satu momen pun yang hilang begitu saja.</p>
+          <p>Buku kecil ini kubuat untuk kita. Untuk menghentikan waktu sejenak, menyelipkannya di antara dua sampul, dan merayakan semua yang sudah kita lewati sejak bulan April lalu sampai hari ini.</p>
+          <p>Di dalamnya ada cerita-cerita yang mungkin sudah kau tahu, tapi kutulis ulang dengan cara yang berbeda: dengan jujur, dengan penuh rasa, dan dengan segenap syukur bahwa aku boleh menjadi bagian dari hidupmu.</p>
+          <p>Kalau suatu hari kamu sedih, atau lupa seberapa berharganya jalan ini, buka lagi buku ini. Semua jawabannya ada di sini &mdash; di tiap kertas yang kubalik pelan-pelan untukmu.</p>
+          <p class="page-sign caveat">&mdash; untuk Ara, pembaca pertama dan satu-satunya</p>
         </div>
       </div>
-    </div>
+      <div class="backface"></div>
+    </section>
 
-    <div class="tl-item future">
-      <div class="tl-line"><span class="tl-dot">+</span></div>
-      <div class="tl-text">
-        <h3 class="caveat pencil">Dan masih panjang...</h3>
-        <p>Ini baru 6 bulan pertama. Masih banyak halaman kosong untuk kita isi bersama &mdash; lebih banyak lagi cerita, lebih banyak lagi tawa. Aku nggak sabar.</p>
+    <!-- ============ P2: KATA PENGANTAR II ============ -->
+    <section class="page" data-title="Kata Pengantar">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat">Kata Pengantar</h2>
+          <p class="page-kicker caveat">bagian kedua, sebelum cerita dimulai</p>
+          <p>Orang bilang enam bulan itu sebentar. Tapi ketika kuingat betapa banyak tawa, obrolan sampai larut, pesan selamat pagi, dan tiga puluh episode candaan yang hanya kita berdua yang mengerti &mdash; enam bulan ini terasa seperti satu dekade kecil yang penuh.</p>
+          <p>Aku juga ingat betapa sering kita melewati perbedaan: beda cara berpikir, beda mood, beda selera musik. Justru di situ aku makin yakin bahwa <em>bersama</em> bukan berarti <em>sama</em>, melainkan berani tetap memilih setiap hari walau berbeda.</p>
+          <p>Buku ini bukan sekadar perayaan enam bulan. Ia perayaan atas usaha kita berdua yang terus saling menjaga &mdash; sesuatu yang lebih besar sedang kita pelihara pelan-pelan. Terima kasih sudah mau merawatnya bersamaku.</p>
+          <p>Halaman-halaman berikut kubuat untuk kita balik pelan-pelan. Kubayangkan kamu membaca sambil senyum-senyum kecil &mdash; lalu kita bikin lebih banyak cerita lagi untuk halaman-halaman berikutnya.</p>
+          <div class="page-divider"><span>&#10047;</span></div>
+          <p class="page-sign caveat">&mdash; mari kita mulai, dari halaman paling awal</p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="backface"></div>
+    </section>
 
-<!-- ==================== GALERI ==================== -->
-<section id="galeri" class="section alt">
-  <h2 class="section-title caveat"><span class="tape-inline"></span>Galeri Kenangan<span class="tape-inline"></span></h2>
-  <p class="section-sub">Setiap foto punya cerita. Klik untuk melihat lebih dekat.</p>
-
-  <div class="gallery">
-    <figure class="photo polaroid rot-1" data-src="photos/first-date/01.jpg" data-lbl="4 April 2026 • Awal lagi deg-degan">
-      <img src="photos/first-date/01.jpg" alt="foto first date">
-      <figcaption class="caveat">Hari pertama kita</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-2" data-src="photos/ultah-ibi/01.jpg" data-lbl="20 Mei 2026 • Ultah Ibi ke-20">
-      <img src="photos/ultah-ibi/01.jpg" alt="foto ultah ibi">
-      <figcaption class="caveat">Ultah Ibi ke-20</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-3" data-src="photos/second-date/01.jpg" data-lbl="7 Juni 2026 • Sakuta Coffee">
-      <img src="photos/second-date/01.jpg" alt="foto sakuta 1">
-      <figcaption class="caveat">Cafe favorit kita</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-4" data-src="photos/second-date/02.jpg" data-lbl="7 Juni 2026 • Sakuta Coffee">
-      <img src="photos/second-date/02.jpg" alt="foto sakuta 2">
-      <figcaption class="caveat">Kopi + kamu</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-5" data-src="photos/second-date/03.jpg" data-lbl="7 Juni 2026 • Sakuta Coffee">
-      <img src="photos/second-date/03.jpg" alt="foto sakuta 3">
-      <figcaption class="caveat">Senyum yang sama lagi</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-1" data-src="photos/second-date/04.jpg" data-lbl="7 Juni 2026 • Sakuta Coffee">
-      <img src="photos/second-date/04.jpg" alt="foto sakuta 4">
-      <figcaption class="caveat">Nostalgia favorit</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-2" data-src="photos/second-date/05.jpg" data-lbl="7 Juni 2026 • Sakuta Coffee">
-      <img src="photos/second-date/05.jpg" alt="foto sakuta 5">
-      <figcaption class="caveat">Momen kecil berarti</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-3" data-src="photos/ultah-ara/01.jpg" data-lbl="6 Agustus 2026 • Ultah Ara">
-      <img src="photos/ultah-ara/01.jpg" alt="foto ultah ara 1">
-      <figcaption class="caveat">Cewek paling bahagia</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-4" data-src="photos/ultah-ara/02.jpg" data-lbl="6 Agustus 2026 • Bintaro Xchange">
-      <img src="photos/ultah-ara/02.jpg" alt="foto ultah ara 2">
-      <figcaption class="caveat">Ultah Ara ke-21</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-5" data-src="photos/ultah-ara/03.jpg" data-lbl="6 Agustus 2026 • Bintaro Xchange">
-      <img src="photos/ultah-ara/03.jpg" alt="foto ultah ara 3">
-      <figcaption class="caveat">Waktunya kue!</figcaption>
-    </figure>
-    <figure class="photo polaroid rot-1" data-src="photos/ultah-ara/04.jpg" data-lbl="6 Agustus 2026 • Bintaro Xchange">
-      <img src="photos/ultah-ara/04.jpg" alt="foto ultah ara 4">
-      <figcaption class="caveat">Cerita yang terus berlanjut</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ==================== MEMORY JAR ==================== -->
-<section id="jar" class="section jar-wrap">
-  <h2 class="section-title caveat"><span class="tape-inline"></span>Memory Jar<span class="tape-inline"></span></h2>
-  <p class="section-sub">Setiap kenangan kita disimpan di dalam toples kecil ini. <br>Klik toplesnya untuk mengambil satu kenangan secara acak. &#10024;</p>
-
-  <div class="jar-scene">
-    <button id="jarBtn" class="jar" aria-label="Ambil kenangan">
-      <svg viewBox="0 0 200 260" class="jar-svg">
-        <path class="jar-glass" d="M55 40 h90 v25 l8 25 l8 20 v110 a25 25 0 0 1 -25 25 h-80 a25 25 0 0 1 -25 -25 v-110 l8 -20 l8 -25 z" />
-        <path class="jar-lid" d="M35 18 h130 v22 h-130 z" rx="6" />
-        <rect class="jar-top" x="35" y="40" width="130" height="12" />
-        <ellipse class="jar-shine" cx="62" cy="120" rx="8" ry="50" />
-        <g class="jar-hearts">
-          <text x="95" y="120" class="jh">&#9829;</text>
-          <text x="110" y="150" class="jh">&#9825;</text>
-          <text x="82" y="165" class="jh">&#9829;</text>
-          <text x="105" y="105" class="jh">&#10047;</text>
-        </g>
-      </svg>
-      <span class="jar-label caveat">catatanku<br>&hearts;</span>
-    </button>
-    <div class="jar-note rotate-slight" id="jarNote">
-      <p class="caveat">klik toplesnya &#9786;</p>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== MOMEN SPESIAL ==================== -->
-<section id="momen" class="section alt">
-  <h2 class="section-title caveat"><span class="tape-inline"></span>Momen Spesial<span class="tape-inline"></span></h2>
-  <p class="section-sub">Hari-hari yang nggak boleh kita lupakan.</p>
-
-  <div class="momen-grid">
-    <div class="momen-card m-1">
-      <div class="mc-tag">01</div>
-      <h3 class="caveat pencil">First Date</h3>
-      <p class="mc-date">4 April 2026</p>
-      <p>Di mana rasa nyaman itu dimulai. Kamu lucu, gara-gara kamu aku jadi sering ketawa sendiri.</p>
-    </div>
-    <div class="momen-card m-2">
-      <div class="mc-tag">02</div>
-      <h3 class="caveat pencil">Ultah Ibi</h3>
-      <p class="mc-date">20 Mei 2026</p>
-      <p>Ultahku ke-20, dan kamu jadi salah satu alasan mengapa tahun itu terasa lebih hangat.</p>
-    </div>
-    <div class="momen-card m-3">
-      <div class="mc-tag">03</div>
-      <h3 class="caveat pencil">Second Date</h3>
-      <p class="mc-date">7 Juni 2026</p>
-      <p>Sakuta Coffee, Bintaro. Kopi terasa jauuuh lebih nikmat karena ditemani kamu.</p>
-    </div>
-    <div class="momen-card m-4">
-      <div class="mc-tag">04</div>
-      <h3 class="caveat pencil">Ultah Ara</h3>
-      <p class="mc-date">6 Agustus 2026</p>
-      <p>Ke-21, dan aku bersyukur bisa ikut merayakannya. Senyummu = hadiah terbaik buatku.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== KUTIPAN & LAGU ==================== -->
-<section id="lagu" class="section">
-  <h2 class="section-title caveat"><span class="tape-inline"></span>Kutipan &amp; Lagu Kita<span class="tape-inline"></span></h2>
-  <p class="section-sub">Kalimat yang terasa seperti milik kita, dan lagu yang menemani hari-hari kita.</p>
-
-  <div class="notes">
-    <div class="note n-1">
-      <p>"Aku memilihmu dan akan tetap memilihmu. Setiap hari, tanpa ragu."</p>
-      <span class="note-src caveat">— buat Ara</span>
-    </div>
-    <div class="note n-2">
-      <p>"Dalam hidup yang serba cepat, aku bersyukur kita memilih untuk pelan-pelan saling mengenal."</p>
-      <span class="note-src caveat">— dari hati, Ibi</span>
-    </div>
-    <div class="note n-3">
-      <p>"Rumah itu bukan tempat. Rumah itu kamu."</p>
-      <span class="note-src caveat">— untuk malaikat kecilku</span>
-    </div>
-  </div>
-
-  <!-- spotify: tempel link lagu kalian di bawah ini -->
-  <div class="spotify-wrap">
-    <!--
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/GANTI_DENGAN_ID_LAGU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    -->
-    <div class="spotify-placeholder caveat">
-      &mdash;&#9835;&mdash; lagu yang menemani kita berdua <br>
-      <small>(isi link Spotify kalian di index.html bagian #lagu)</small>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== SURAT ==================== -->
-<section id="surat" class="section alt">
-  <h2 class="section-title caveat"><span class="tape-inline"></span>Surat untuk Ara<span class="tape-inline"></span></h2>
-  <p class="section-sub">Ada sesuatu yang pengen aku tulis buat kamu. Klik perangko / amplopnya ya. &#9998;</p>
-
-  <div class="letter-wrap">
-    <button id="envBtn" class="envelope" aria-label="Buka surat">
-      <div class="env-flap"></div>
-      <div class="env-body"></div>
-      <div class="env-heart">&hearts;</div>
-      <span class="env-stamp caveat">untuk &lt;3 ku</span>
-    </button>
-  </div>
-
-  <div id="letterModal" class="modal hidden">
-    <div class="modal-card letter-paper">
-      <button id="letterClose" class="modal-close" aria-label="Tutup">&times;</button>
-      <p class="letter-date caveat">4 Oktober 2026</p>
-      <h3 class="caveat letter-greet">Untuk Ara, malaikat kecilku &hearts;</h3>
-      <div class="letter-body">
-        <p>Ara,</p>
-        <p>Enam bulan nggak kerasa ya. Rasanya baru kemarin aku deg-degan pas first date kita bulan April, dan sekarang kita sudah sampai di bulan Oktober dengan seribu cerita.</p>
-        <p>Terima kasih sudah mau jadi tempatku pulang, tertawa saat aku curhat, dan sabar sama segala tingkahku yang kadang nggabisa ditebak. Kamu bikin hal-hal kecil terasa istimewa &mdash; dari kopi di Sakuta sampai jalan sore berdua.</p>
-        <p>Ini baru permulaan. Masih ada banyak first date lain, banyak ultah, banyak tanggal spesial yang pengen aku rayakan sama kamu. Aku nggak bisa janji sempurna, tapi aku bisa janji setia di setiap bagian dari cerita kita.</p>
-        <p class="letter-end">I love you, Ara. To many, many more months.</p>
-        <p class="letter-sign caveat">&mdash; Ibi</p>
+    <!-- ============ P3: KENANGAN I &mdash; FIRST DATE ============ -->
+    <section class="page" data-title="Kenangan 1 &middot; First Date">
+      <div class="front">
+        <div class="page-inner">
+          <p class="page-no caveat">Halaman Satu</p>
+          <h2 class="page-head caveat">Kenangan Paling Awal</h2>
+          <p class="page-kicker caveat">Sabtu, 4 April 2026 &mdash; First Date</p>
+          <figure class="page-photo polaroid rot-1">
+            <img src="photos/first-date/01.jpg" alt="First date 4 April 2026">
+            <figcaption class="caveat">hari pertama, semua dimulai</figcaption>
+          </figure>
+          <p>Kalau ada satu hari yang mengubah komposisi seluruh hidupku, itu adalah hari ini. Sabtu, 4 April 2026. Aku masih ingat persis detil-detilnya: mengecek jam lima kali sebelum berangkat, bertanya-tanya apakah bajuku cukup layak, dan deg-degannya rasanya mau ikut ujian nasional.</p>
+          <p>Tapi begitu bertemu kamu, semuanya berubah jadi tenang. Lima menit pertama kita banyak diam &mdash; tapi bukan diam yang canggung, melainkan diam yang nyaman, seperti dua orang yang baru bertemu tapi sudah seperti teman lama.</p>
+          <p>Lalu kita mulai mengobrol. Aku bercerita hal-hal receh, dan kamu tertawa. Dan di situlah, dari tawa itu, untuk pertama kalinya aku mencatat dalam hati: <em>&ldquo;aku tidak mau lupa suara ini.&rdquo;</em></p>
+          <p>Pulangnya aku hanya bisa senyum-senyum sendiri. Malam itu terasa beda dari malam-malam sebelumnya &mdash; bukan karena ada yang mengucap <em>I love you</em>, tapi karena ada rasa yang diam-diam tumbuh: <em>aku suka sama kamu, betul-betul suka.</em></p>
+          <p class="page-sign caveat">&mdash; Ibi</p>
+        </div>
       </div>
-    </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P4: KENANGAN II &mdash; ULTAH IBI ============ -->
+    <section class="page" data-title="Kenangan 2 &middot; Ultah Ibi">
+      <div class="front">
+        <div class="page-inner">
+          <p class="page-no caveat">Halaman Dua</p>
+          <h2 class="page-head caveat">Merayakan Umur Baru</h2>
+          <p class="page-kicker caveat">20 Mei 2026 &mdash; Ultah Ibi ke-20</p>
+          <figure class="page-photo polaroid rot-2">
+            <img src="photos/ultah-ibi/01.jpg" alt="Ultah Ibi ke-20">
+            <figcaption class="caveat">satu lagi tahun, dan kamu ada di dalamnya</figcaption>
+          </figure>
+          <p>Bagi kebanyakan orang, ulang tahun itu tentang kue, lilin, dan doa. Tapi ultahku yang ke-20 tahun ini aku mendapat hadiah yang tidak pernah kubayangkan: <em>kamu.</em></p>
+          <p>Kamu ingat tanggalnya. Kamu mengirim ucapan lewat tengah malam, lalu menyanyikan &ldquo;Selamat Ulang Tahun&rdquo; dengan nada yang sedikit fals tapi sangat lucu &mdash; dan itu justru telinga yang paling nyaman mendengarnya.</p>
+          <p>Ada hal-hal kecil yang membuat seorang laki-laki merasa terlihat: ketika kamu hafal tanggal yang kadang aku sendiri lupa, ketika kamu bertanya &ldquo;kamu sudah makan?&rdquo;, ketika kamu ikut bahagia untuk kebahagiaan sekecil apa pun. Itulah kamu, dan itulah yang aku cintai.</p>
+          <p>Umur dua puluh terasa lebih dewasa bukan karena angkanya bertambah, tapi karena di angka itu ada kamu. Terima kasih sudah mau merayakan hidupku &mdash; bahkan untuk hal yang paling sederhana sekalipun.</p>
+          <p class="page-sign caveat">&mdash; Ibi, 20 tahun</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P5: KENANGAN III &mdash; SAKUTA COFFEE ============ -->
+    <section class="page" data-title="Kenangan 3 &middot; Sakuta Coffee">
+      <div class="front">
+        <div class="page-inner">
+          <p class="page-no caveat">Halaman Tiga</p>
+          <h2 class="page-head caveat">Kopi, Tawa, dan Kamu</h2>
+          <p class="page-kicker caveat">7 Juni 2026 &mdash; Second Date di Sakuta Coffee, Bintaro</p>
+          <figure class="page-photo polaroid rot-3">
+            <img src="photos/second-date/01.jpg" alt="Second date di Sakuta Coffee">
+            <figcaption class="caveat">tempat yang menjadi &ldquo;tempat kita&rdquo;</figcaption>
+          </figure>
+          <p>Orang bilang tempat biasa bisa menjadi istimewa kalau yang duduk di seberangmu istimewa. Sakuta Coffee, Bintaro, adalah buktinya. Bukan karena kopinya luar biasa, tapi karena kita pernah duduk lama di sana &mdash; mengobrol tentang apa-apa dan hal-hal yang tidak habis-habis.</p>
+          <p>Ada sesuatu yang jujur dari janji bertemu untuk kedua kalinya. Kalau yang pertama adalah keberanian, maka yang kedua adalah pilihan. Dan dari pilihan itu aku belajar bahwa kamu memang mencariku, bukan sekadar menoleh.</p>
+          <p>Kita memesan dua gelas, berbagi satu meja, berbagi tawa, berbagi cerita. Diam-diam aku berharap meja ini, kopi ini, dan kamu &mdash; ceritanya panjang. Setidaknya sampai gelasnya benar-benar kosong. Dan syukurnya, cerita kita tidak berhenti sampai di situ.</p>
+          <p>Sampai sekarang, setiap aku melewati Bintaro dan melihat Sakuta, aku tersenyum sendiri. Bukan karena kopinya. Karena ingat bahwa di sana aku pernah sekaligus merasa.</p>
+          <p class="page-sign caveat">&mdash; Ibi</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P6: KENANGAN IV &mdash; ULTAH ARA ============ -->
+    <section class="page" data-title="Kenangan 4 &middot; Ultah Ara">
+      <div class="front">
+        <div class="page-inner">
+          <p class="page-no caveat">Halaman Empat</p>
+          <h2 class="page-head caveat">Perayaan untuk Semesta Kecilku</h2>
+          <p class="page-kicker caveat">6 Agustus 2026 &mdash; Ultah Ara ke-21, Bintaro Xchange</p>
+          <figure class="page-photo polaroid rot-4">
+            <img src="photos/ultah-ara/01.jpg" alt="Ultah Ara ke-21">
+            <figcaption class="caveat">senyum paling bahagia yang pernah kulihat</figcaption>
+          </figure>
+          <p>Ada ulang tahun yang sekadar dirayakan, dan ada ulang tahun yang terasa seperti perayaan kecil bagi orang yang sangat kamu sayangi. Ultahmu yang ke-21 di Bintaro Xchange adalah yang kedua.</p>
+          <p>Sampai sekarang aku masih ingat wajahmu saat melihat kejutannya. Kamu mengucapkan sedikit kata, tapi matamu bicara banyak hal. Di saat itulah aku tahu: semua persiapan &mdash; deg-degannya, bolak-baliknya &mdash; terbayar lunas.</p>
+          <p>Kita memotong kue, kamu meniup lilin, dan di antara tawa-tawa itu aku berdoa dalam hati satu hal yang paling serius: <em>&ldquo;Tuhan, tolong izinkan aku ada di setiap ulang tahunnya, mulai sekarang.&rdquo;</em></p>
+          <p>Umur dua puluh satu itu muda, tapi kamu sudah tumbuh dengan cara yang paling cantik: dewasa, tulus, dan pelan-pelan selalu memperbaiki hidupku. Aku bangga menjadi bagian dari ceritamu.</p>
+          <p>Jadi ini janji kecilku: di setiap kue ulang tahunmu nanti, aku akan berusaha menjadi orang paling depan yang tersenyum untukmu.</p>
+          <p class="page-sign caveat">&mdash; Ibi</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P7: GALERI I ============ -->
+    <section class="page" data-title="Galeri Kenangan">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat gallery-page-title">Galeri Kenangan</h2>
+          <p class="page-kicker caveat" style="text-align:center">sebagian foto dari buku cerita kita &mdash; klik untuk memperbesar</p>
+          <div class="gallery-grid">
+            <figure class="polaroid rot-1" data-src="photos/first-date/01.jpg" data-lbl="4 April 2026 &bull; First date &mdash; semua dimulai dari sini">
+              <img src="photos/first-date/01.jpg" alt="First date">
+              <figcaption class="caveat">hari pertama</figcaption>
+            </figure>
+            <figure class="polaroid rot-2" data-src="photos/ultah-ibi/01.jpg" data-lbl="20 Mei 2026 &bull; Ultah Ibi ke-20">
+              <img src="photos/ultah-ibi/01.jpg" alt="Ultah Ibi">
+              <figcaption class="caveat">ultah Ibi</figcaption>
+            </figure>
+            <figure class="polaroid rot-3" data-src="photos/second-date/01.jpg" data-lbl="7 Juni 2026 &bull; Sakuta Coffee &mdash; kopi jadi terasa lebih nikmat">
+              <img src="photos/second-date/01.jpg" alt="Sakuta Coffee">
+              <figcaption class="caveat">kopi kita</figcaption>
+            </figure>
+            <figure class="polaroid rot-4" data-src="photos/second-date/02.jpg" data-lbl="7 Juni 2026 &bull; Sakuta Coffee &mdash; momen yang diulang lagi">
+              <img src="photos/second-date/02.jpg" alt="Sakuta Coffee 2">
+              <figcaption class="caveat">diulang lagi</figcaption>
+            </figure>
+            <figure class="polaroid rot-5" data-src="photos/second-date/03.jpg" data-lbl="7 Juni 2026 &bull; Sakuta Coffee &mdash; senyum itu lagi">
+              <img src="photos/second-date/03.jpg" alt="Sakuta Coffee 3">
+              <figcaption class="caveat">senyum itu lagi</figcaption>
+            </figure>
+            <figure class="polaroid rot-1" data-src="photos/second-date/04.jpg" data-lbl="7 Juni 2026 &bull; Sakuta Coffee &mdash; cerita yang tidak pernah habis">
+              <img src="photos/second-date/04.jpg" alt="Sakuta Coffee 4">
+              <figcaption class="caveat">cerita kita</figcaption>
+            </figure>
+          </div>
+          <p class="gallery-note caveat">enam potret ini kubingkai dengan hati &mdash; melanjutkan ke halaman berikut &hellip;</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P8: GALERI II ============ -->
+    <section class="page" data-title="Galeri Kenangan">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat gallery-page-title">Galeri Kenangan</h2>
+          <p class="page-kicker caveat" style="text-align:center">dan sisanya, dari hari yang paling ceria</p>
+          <div class="gallery-grid">
+            <figure class="polaroid rot-5" data-src="photos/second-date/05.jpg" data-lbl="7 Juni 2026 &bull; Sakuta Coffee &mdash; momen kecil yang berarti besar">
+              <img src="photos/second-date/05.jpg" alt="Sakuta Coffee 5">
+              <figcaption class="caveat">momen kecil</figcaption>
+            </figure>
+            <figure class="polaroid rot-1" data-src="photos/ultah-ara/01.jpg" data-lbl="6 Agustus 2026 &bull; Ultah Ara ke-21 &mdash; hari paling bahagia">
+              <img src="photos/ultah-ara/01.jpg" alt="Ultah Ara 1">
+              <figcaption class="caveat">ultah Ara</figcaption>
+            </figure>
+            <figure class="polaroid rot-2" data-src="photos/ultah-ara/02.jpg" data-lbl="6 Agustus 2026 &bull; Bintaro Xchange &mdash; senyum yang mengalahkan semua persiapan">
+              <img src="photos/ultah-ara/02.jpg" alt="Ultah Ara 2">
+              <figcaption class="caveat">senyum terbaik</figcaption>
+            </figure>
+            <figure class="polaroid rot-3" data-src="photos/ultah-ara/03.jpg" data-lbl="6 Agustus 2026 &bull; Bintaro Xchange &mdash; saatnya meniup lilin">
+              <img src="photos/ultah-ara/03.jpg" alt="Ultah Ara 3">
+              <figcaption class="caveat">tiup lilin</figcaption>
+            </figure>
+            <figure class="polaroid rot-4" data-src="photos/ultah-ara/04.jpg" data-lbl="6 Agustus 2026 &bull; Bintaro Xchange &mdash; cerita terus berlanjut">
+              <img src="photos/ultah-ara/04.jpg" alt="Ultah Ara 4">
+              <figcaption class="caveat">cerita berlanjut</figcaption>
+            </figure>
+          </div>
+          <p class="gallery-note caveat">lima potret terakhir untuk hari yang paling ceria &mdash; semoga foto ini tidak pernah jadi foto terakhir kita.</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P9: MEMORY JAR ============ -->
+    <section class="page" data-title="Memory Jar">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat gallery-page-title">Memory Jar</h2>
+          <p class="page-kicker caveat" style="text-align:center">kenangan-kenangan kecil kita tersimpan di toples ini. klik toplesnya &mdash; biarkan dia memilih satu kenangan untukmu. &#10024;</p>
+          <div class="jar-page">
+            <button id="jarBtn" class="jar" aria-label="Ambil kenangan">
+              <svg viewBox="0 0 200 260" class="jar-svg">
+                <path class="jar-glass" d="M55 40 h90 v25 l8 25 l8 20 v110 a25 25 0 0 1 -25 25 h-80 a25 25 0 0 1 -25 -25 v-110 l8 -20 l8 -25 z" />
+                <path class="jar-lid" d="M35 18 h130 v22 h-130 z" />
+                <rect class="jar-top" x="35" y="40" width="130" height="12" />
+                <ellipse class="jar-shine" cx="62" cy="120" rx="8" ry="50" />
+                <g class="jar-hearts">
+                  <text x="95" y="120" class="jp">&#9829;</text>
+                  <text x="110" y="150" class="jp">&#9825;</text>
+                  <text x="82" y="165" class="jp">&#9829;</text>
+                  <text x="105" y="105" class="jp">&#10047;</text>
+                </g>
+              </svg>
+              <span class="jar-label caveat">catatanku<br>&hearts;</span>
+            </button>
+            <div class="jar-note caveat" id="jarNote">klik toplesnya, ambil satu kenangan &#9786;</div>
+          </div>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P10: KUTIPAN & LAGU ============ -->
+    <section class="page" data-title="Kutipan &amp; Lagu">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat">Kutipan &amp; Lagu Kita</h2>
+          <p class="page-kicker caveat">kalimat yang terasa seperti milik kita</p>
+          <div class="notes">
+            <div class="note">
+              <p>&ldquo;Aku memilihmu, dan akan tetap memilihmu. Setiap pagi, setiap malam, setiap fase &mdash; tanpa ragu.&rdquo;</p>
+              <span class="note-src">— buat Ara</span>
+            </div>
+            <div class="note">
+              <p>&ldquo;Dalam hidup yang serba cepat ini, aku bersyukur kita memutuskan untuk pelan-pelan saling mengenal &mdash; sampai yang paling receh pun kita anggap penting.&rdquo;</p>
+              <span class="note-src">— dari hati, Ibi</span>
+            </div>
+            <div class="note">
+              <p>&ldquo;Rumah itu bukan sebuah tempat. Rumah itu kamu.&rdquo;</p>
+              <span class="note-src">— untuk malaikat kecilku</span>
+            </div>
+          </div>
+          <div class="spotify-wrap">
+            <div class="spotify-placeholder caveat">
+              &mdash;&#9835;&mdash; lagu yang menemani kita berdua &mdash;&#9835;&mdash;<br>
+              <small>(isi link Spotify kalian di index.html bagian #spotify)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P11: SURAT ============ -->
+    <section class="page" data-title="Surat untuk Ara">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat gallery-page-title">Surat untuk Ara</h2>
+          <p class="page-kicker caveat" style="text-align:center">ada yang ingin kutuliskan untukmu. buka amplopnya &mdash; pelan-pelan ya. &#9998;</p>
+          <div class="letter-wrap">
+            <button id="envBtn" class="envelope" aria-label="Buka surat">
+              <div class="env-body"></div>
+              <div class="env-flap"></div>
+              <div class="env-heart">&hearts;</div>
+              <span class="env-stamp caveat">untuk &lt;3 ku</span>
+            </button>
+          </div>
+          <p class="letter-note caveat">klik amplopnya untuk membuka surat dari Ibi</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P12: TERIMA KASIH & DOA ============ -->
+    <section class="page" data-title="Terima Kasih &amp; Doa">
+      <div class="front">
+        <div class="page-inner">
+          <h2 class="page-head caveat">Terima Kasih &amp; Doa</h2>
+          <p class="page-kicker caveat">bersyukur untuk yang sudah lewat, berharap untuk yang akan datang</p>
+          <div class="prayer-card">
+            <div class="prayer-thanks">
+              <h3>Syukurku</h3>
+              <p>Terima kasih atas setiap momen kecil yang terasa besar: pesan selamat pagi, tawa yang susah berhenti, genggaman tangan di perjalanan pulang, dan kehadiranmu yang membuat hari-hari biasa menjadi tidak biasa sama sekali. Terima kasih sudah menjadi alasan untuk terus memperbaiki diri.</p>
+            </div>
+            <div class="prayer-doa">
+              <h3>Doaku</h3>
+              <p>Semoga kita selalu saling menjaga, sesulit apa pun ceritanya. Semoga setiap masalah yang datang kita hadapi berdua, bukan berdua-dua. Semoga cinta ini tumbuh semakin dalam, dan semoga Allah selalu menyatukan kita dalam kebaikan &mdash; sampai nanti, sampai jauh, sampai cerita kita selesai ditulis oleh waktu. Aamiin ya Rabbal &rsquo;alamin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P13: PENUTUP ============ -->
+    <section class="page" data-title="Penutup">
+      <div class="front">
+        <div class="page-inner closing-inner">
+          <p class="closing-kicker caveat">dan cerita kita &hellip;</p>
+          <h2 class="closing-title">I love you,<br>Ara</h2>
+          <div class="closing-hearts">&hearts; &hearts; &hearts;</div>
+          <p class="closing-note caveat">enam bulan itu bukan akhir, bukan juga puncak. ini baru halaman yang sedang kita tulis &mdash; dan aku tidak sabar membalik halaman-halaman berikutnya bersamamu. terima kasih sudah membaca sampai sini, sayang.</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
+
+    <!-- ============ P14: SAMPUL BELAKANG ============ -->
+    <section class="page cover-back" data-title="Selesai">
+      <div class="front">
+        <div class="cover-back-inner">
+          <p class="caveat-title caveat">dengan segenap cinta</p>
+          <p>Buku ini selesai ditulis pada 4 Oktober 2026, untuk enam bulan pertama dari sekian banyak bulan yang masih akan kita lalui bersama.</p>
+          <p>Ibuku tersayang &mdash; terima kasih sudah menjadi halaman terindah dalam hidupku.</p>
+          <p class="bq">Ibi &#10084; Ara</p>
+        </div>
+      </div>
+      <div class="backface"></div>
+    </section>
   </div>
-</section>
 
-<!-- ==================== TERIMA KASIH & DOA ==================== -->
-<section id="doa" class="section">
-  <h2 class="section-title caveat"><span class="tape-inline"></span>Terima Kasih &amp; Doa<span class="tape-inline"></span></h2>
-  <p class="section-sub">Bersyukur, dan berharap untuk enam bulan ke depan.</p>
+  <button id="prevBtn" class="nav-arrow pv" aria-label="Halaman sebelumnya" disabled>&larr;</button>
+  <button id="nextBtn" class="nav-arrow nx" aria-label="Halaman selanjutnya">&rarr;</button>
+  <div class="page-counter">Halaman <b id="curPg">1</b> dari <span id="totPg">1</span> &nbsp;&bull;&nbsp; <span id="curTitle">Sampul</span></div>
+</div>
 
-  <div class="prayer-card">
-    <p class="prayer-anchor caveat">&#10024;</p>
-    <div class="prayer-thanks">
-      <h3 class="caveat">Syukurku</h3>
-      <p>Terima kasih atas setiap momen kecil yang terasa besar: pesan selamat pagi, tawa bareng, genggaman tangan di perjalanan pulang, dan kehadiranmu di hari-hari yang biasa saja. Nggak ada yang biasa lagi kalau bersamamu.</p>
-    </div>
-    <div class="prayer-doa">
-      <h3 class="caveat">Doaku</h3>
-      <p>Semoga kita tetap saling menjaga. Semoga setiap masalah datang, kita hadapi berdua. Semoga cinta ini tumbuh makin dalam, dan semoga Allah selalu menyatukan kita dalam kebaikan. Aamiin.</p>
-    </div>
+<!-- ============ MODAL SURAT ============ -->
+<div id="letterModal" class="modal hidden">
+  <div class="modal-card">
+    <button id="letterClose" class="modal-close" aria-label="Tutup surat">&times;</button>
+    <p class="letter-date caveat">4 Oktober 2026</p>
+    <h3 class="letter-greet">Untuk Ara, cintaku &hearts;</h3>
+    <p>Ara yang tersayang,</p>
+    <p>Enam bulan. Rasanya seperti baru semalam kamu jadi bagian dari ceritaku, padahal sudah banyak sekali hal yang kita lewati. Semesta terasa lebih murah hati semenjak namamu ikut dalam doa-doaku.</p>
+    <p>Aku menulis surat ini bukan karena harus, tapi karena kata-kata yang ditulis akan menjadi saksi. Suatu hari nanti, kalau aku banyak melupakan hal-hal kecil, surat inilah yang akan mengingatkanku betapa aku pernah mencintaimu dengan cara yang sangat, sangat penuh.</p>
+    <p>Mungkin kamu tidak sadar, tapi kamu mengubah hal-hal besar dalam hidupku dengan cara yang paling halus. Aku jadi lebih sabar, lebih bisa menahan nafas saat marah, lebih rajin bersyukur. Ketika aku sedang sulit, yang terpikir pertama bukan masalahnya, tapi bahwa <em>&ldquo;ada Ara di rumah&rdquo;</em>. Itu saja sudah sering menyelamatkan hariku.</p>
+    <p>Orang boleh bilang masa pacaran yang penting happy, tidak perlu ribet. Tapi bersamamu aku belajar bahwa cinta bukan cuma soal rasa hari ini, melainkan soal arah yang sama: arah menuju lebih baik, menuju kamu yang sebaik-baiknya aku jaga.</p>
+    <p>Aku tidak akan menjanjikan kata-kata muluk. Kalimat &ldquo;kamu tidak akan pernah sedih&rdquo; adalah bohong. Tapi aku berjanji pada diriku sendiri untuk selalu memilihmu: saat benar, saat salah, saat lelah, saat ragu. Yang jujur, yang seutuhnya.</p>
+    <p>Kita bangun begini: saling sabar, saling mendoakan, saling mengalah di hal-hal kecil, dan saling menemani di hal-hal besar. Sisanya, biarkan waktu yang menulis.</p>
+    <p>Terima kasih sudah bertahan enam bulan ini bersamaku. Terima kasih sudah menjadi rumah. Terima kasih sudah menjadi Ara yang tak akan pernah aku bosankan.</p>
+    <p class="letter-end">Aku mencintaimu bukan karena kamu sempurna, tapi karena bersamamu hidup ini terasa lebih masuk akal untuk dijalani.</p>
+    <p>I love you, to the moon and back &mdash; dan masih lebih.</p>
+    <p class="letter-sign caveat">&mdash; Ibi, untuk Ara, sampai berjuta-enam-bulan berikutnya</p>
   </div>
-</section>
+</div>
 
-<!-- ==================== PENUTUP ==================== -->
-<footer class="closing">
-  <div class="tape tape-c1"></div>
-  <div class="tape tape-c2"></div>
-  <p class="closing-kicker caveat">dan cerita kita...</p>
-  <h2 class="closing-title dancing">I love you, Ara</h2>
-  <div class="closing-hearts">&hearts; &hearts; &hearts;</div>
-  <p class="closing-note caveat">dari Ibi, untuk selamanya &mdash; 4 Oktober 2026</p>
-  <button id="toTop" class="to-top">&uarr; kembali ke atas</button>
-</footer>
-
-<!-- ==================== LIGHTBOX ==================== -->
+<!-- ============ LIGHTBOX ============ -->
 <div id="lightbox" class="lightbox hidden">
-  <button id="lbClose" class="lightbox-close">&times;</button>
+  <button id="lbClose" class="lightbox-close" aria-label="Tutup">&times;</button>
   <figure class="lightbox-figure">
     <img id="lbImg" src="" alt="foto diperbesar">
     <figcaption id="lbCap" class="caveat"></figcaption>
