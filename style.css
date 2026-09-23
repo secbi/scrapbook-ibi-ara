@@ -380,6 +380,12 @@ button { font-family: inherit; }
   outline: none;
 }
 .audio-card audio::-webkit-media-controls-panel { background: var(--pink-soft); }
+.audio-hint {
+  font-size: 1.15rem !important;
+  color: var(--ink-soft) !important;
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+}
 
 /* ============ SURAT (AMPLOP) ============ */
 .letter-wrap { display: flex; justify-content: center; margin-top: 24px; }

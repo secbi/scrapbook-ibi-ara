@@ -42,6 +42,12 @@
     curTitle.textContent = p.getAttribute('data-title') || '';
     prevBtn.disabled = current === 0;
     nextBtn.disabled = current === total - 1;
+
+    /* siapkan pemutar lagu saat halaman lagu terbuka */
+    var player = p.querySelector('audio');
+    if (player && player.paused && player.readyState === 0) {
+      try { player.load(); } catch (e) { /* abaikan */ }
+    }
   }
 
   function goNext() {
