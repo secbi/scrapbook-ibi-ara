@@ -344,6 +344,13 @@ button { font-family: inherit; }
   text-align: right;
 }
 .spotify-wrap { margin-top: 22px; }
+.spotify-title {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+}
 .spotify-placeholder {
   border: 2px dashed var(--pink);
   border-radius: 12px;

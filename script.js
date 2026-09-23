@@ -144,14 +144,14 @@
   var jarNote = $('jarNote');
 
   var memories = [
-    'First date kita bulan April. Deg-degannya sampai sekarang masih terasa \u2014 dan aku bersyukur kita memutuskan untuk bertemu.',
+    'First date kita bulan April. Deg-degannya sampai sekarang masih terasa ,  dan aku bersyukur kita memutuskan untuk bertemu.',
     'Sendirian di Sakuta Coffee tiba-tiba terasa lebih hangat, karena aku duduk di seberangmu.',
     'Ultahmu ke-21 di Bintaro Xchange. Senyum kagetmu waktu melihat kejutannya adalah hadiah terbaik untuk semua persiapan.',
-    'Candaan-candaan receh yang hanya kita berdua yang mengerti. Lucunya tidak semua orang paham \u2014 dan itu justru bikin spesial.',
+    'Candaan-candaan receh yang hanya kita berdua yang mengerti. Lucunya tidak semua orang paham ,  dan itu justru bikin spesial.',
     'Jalan sore sambil menggenggam tangan, tidak perlu ke mana-mana, niatnya cuma menemani.',
-    'Saat kamu bilang \u201caku suka sama kamu\u201d \u2014 dan seluruh dunia terasa berhenti sejenak untuk memberitahuku bahwa ini nyata.',
+    'Saat kamu bilang \u201caku suka sama kamu\u201d ,  dan seluruh dunia terasa berhenti sejenak untuk memberitahuku bahwa ini nyata.',
     'Pesan selamat pagi yang selalu berhasil membuat hari-hari berat terasa lebih ringan.',
-    'Kamu menyanyikan lagu favoritmu dengan nada yang tidak pernah pas \u2014 dan tertawaku jadi lebih keras dari lagunya.',
+    'Kamu menyanyikan lagu favoritmu dengan nada yang tidak pernah pas ,  dan tertawaku jadi lebih keras dari lagunya.',
     'Sebuah doa: \u201cTuhan, izinkan aku ada di setiap ulang tahunnya, mulai sekarang.\u201d',
     'Catatan terakhir dari toples ini: I love you, Ara. Lebih dari yang bisa dituliskan.'
   ];
