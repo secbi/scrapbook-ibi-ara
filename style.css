@@ -362,6 +362,25 @@ button { font-family: inherit; }
 }
 .spotify-placeholder small { font-size: 0.95rem !important; }
 
+.audio-card {
+  background: var(--paper);
+  border: 1px solid rgba(199,111,111,0.35);
+  border-radius: 14px;
+  padding: 16px 20px 18px;
+  box-shadow: 0 8px 18px rgba(62,44,26,0.12);
+  text-align: center;
+}
+.audio-name {
+  font-size: 1.5rem;
+  color: var(--pink);
+  margin-bottom: 12px;
+}
+.audio-card audio {
+  width: 100%;
+  outline: none;
+}
+.audio-card audio::-webkit-media-controls-panel { background: var(--pink-soft); }
+
 /* ============ SURAT (AMPLOP) ============ */
 .letter-wrap { display: flex; justify-content: center; margin-top: 24px; }
 .envelope {
