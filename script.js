@@ -118,6 +118,32 @@
   /* tombol favicon samul */
   $('openBook').addEventListener('click', goNext);
 
+  /* ============ AUTO PLAY LAGU ============ */
+  var audioStarted = false;
+
+  function tryPlay() {
+    if (audioStarted) return;
+    var a = document.getElementById('songPlayer');
+    if (!a) return;
+    a.volume = 0.5;
+    var pr = a.play();
+    if (pr) {
+      pr.then(function () { audioStarted = true; }).catch(function () { /* browser blokir, coba lagi saat interaksi berikutnya */ });
+    }
+  }
+
+  /* coba otomatis setelah halaman dimuat */
+  window.setTimeout(tryPlay, 400);
+
+  /* mulai dari interaksi pertama pengguna (klik/tombol/sentuh) */
+  ['click', 'keydown', 'touchstart'].forEach(function (ev) {
+    document.addEventListener(ev, function listener() {
+      tryPlay();
+      /* tetap pasang, karena gesture kedua mungkin yang diizinkan browser */
+      if (audioStarted) document.removeEventListener(ev, listener);
+    });
+  });
+
   refreshUI();
 
   /* ============ LIGHTBOX ============ */
