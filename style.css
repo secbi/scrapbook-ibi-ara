@@ -82,7 +82,7 @@ button { font-family: inherit; }
   z-index: 60;
 }
 .page.flipped { transform: rotateY(-180deg); z-index: 50; }
-.page.current { z-index: 100; }
+.page.current { z-index: 100; transform: none; }
 .page.flipping { z-index: 300; }
 
 
@@ -124,6 +124,9 @@ button { font-family: inherit; }
 .page-inner {
   height: 100%;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  overscroll-behavior: contain;
   padding: 34px 40px 34px 34px;
   scrollbar-width: thin;
   scrollbar-color: var(--pink-soft) transparent;
@@ -586,22 +589,26 @@ button { font-family: inherit; }
 .lightbox-close:hover { background: var(--pink); color: #fff; transform: rotate(90deg); }
 
 /* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .book { width: min(560px, 96vw); aspect-ratio: 4 / 3; }
+}
+
 @media (max-width: 820px) {
+  .scene { padding: 14px 6px 44px; }
+  .book { width: 98vw; aspect-ratio: 4 / 3; }
   .nav-arrow { width: 44px; height: 44px; font-size: 1.1rem; }
   .nav-arrow.pv { left: 6px; }
   .nav-arrow.nx { right: 6px; }
-  .page-inner { padding: 26px 24px 26px 20px; }
-  .page-inner p { font-size: 0.88rem; }
-  .page-head { font-size: 1.8rem; }
+  .page-inner { padding: 20px 18px 26px 14px; }
+  .page-inner p { font-size: 0.9rem; line-height: 1.75; }
+  .page-head { font-size: 1.7rem; }
+  .page-photo { float: none; display: block; margin: 4px auto 14px; max-width: 150px; }
   .gallery-grid { gap: 10px; }
-  .book-hint { font-size: 0.95rem; }
+  .book-hint { font-size: 0.9rem; }
+  .page-counter { bottom: 10px; font-size: 0.75rem; padding: 6px 16px; }
 }
 
 @media (max-width: 560px) {
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .polaroid { max-width: 100%; }
-}
-
-@media (hover: none) and (pointer: coarse) {
-  .page-inner { overflow-y: auto; -webkit-overflow-scrolling: touch; }
 }

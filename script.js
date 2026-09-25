@@ -103,14 +103,22 @@
     if (e.key === 'ArrowLeft') goPrev();
   });
 
-  /* swipe utk perangkat sentuh */
+  /* swipe utk perangkat sentuh (tidak mengganggu scroll vertikal) */
   var touchX = null;
-  book.addEventListener('touchstart', function (e) { touchX = e.changedTouches[0].clientX; }, { passive: true });
+  var touchY = null;
+  book.addEventListener('touchstart', function (e) {
+    touchX = e.changedTouches[0].clientX;
+    touchY = e.changedTouches[0].clientY;
+  }, { passive: true });
   book.addEventListener('touchend', function (e) {
     if (touchX === null) return;
     var dx = e.changedTouches[0].clientX - touchX;
+    var dy = e.changedTouches[0].clientY - touchY;
     touchX = null;
+    touchY = null;
+    /* balik halaman hanya jika geser jelas horizontal */
     if (Math.abs(dx) < 60) return;
+    if (Math.abs(dx) < Math.abs(dy) * 1.5) return;
     if (dx < 0) goNext();
     else goPrev();
   }, { passive: true });
