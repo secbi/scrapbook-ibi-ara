@@ -78,8 +78,10 @@
     if (current <= 0) return;
 
     busy = true;
+    var oldPage = pages[current];
     var leaf = pages[current - 1]; /* balik dari tumpukan kiri ke kanan */
 
+    oldPage.classList.remove('current');
     leaf.classList.add('flipping');
     relayout();
     leaf.classList.remove('flipped');
