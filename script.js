@@ -97,6 +97,8 @@
 
   prevBtn.addEventListener('click', goPrev);
   nextBtn.addEventListener('click', goNext);
+  $('tapPrev').addEventListener('click', goPrev);
+  $('tapNext').addEventListener('click', goNext);
 
   document.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowRight') goNext();

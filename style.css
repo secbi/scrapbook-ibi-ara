@@ -50,7 +50,7 @@ button { font-family: inherit; }
   perspective: 2400px;
 }
 
-.book-hint { font-size: 1.15rem; color: var(--ink-soft); letter-spacing: 1px; }
+.book-hint { font-size: 1.15rem; color: #5c4636; letter-spacing: 1px; font-weight: 600; }
 
 /* ============ BUKU ============ */
 .book {
@@ -144,10 +144,10 @@ button { font-family: inherit; }
   margin-bottom: 2px;
   line-height: 1.2;
 }
-.page-kicker { font-size: 1.35rem !important; color: var(--lavender) !important; margin-bottom: 14px !important; }
+.page-kicker { font-size: 1.35rem !important; color: #8a6aa5 !important; margin-bottom: 14px !important; }
 .page-no {
   font-size: 1.2rem !important;
-  color: var(--peach) !important;
+  color: #c6844f !important;
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 0 !important;
@@ -457,7 +457,7 @@ button { font-family: inherit; }
 
 /* ============ PENUTUP & BACK COVER ============ */
 .closing-inner { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; }
-.closing-kicker { font-size: 1.4rem !important; color: var(--lavender) !important; }
+.closing-kicker { font-size: 1.4rem !important; color: #8a6aa5 !important; }
 .closing-title {
   font-family: 'Dancing Script', cursive;
   font-size: clamp(2.4rem, 6vw, 4rem);
@@ -611,4 +611,39 @@ button { font-family: inherit; }
 @media (max-width: 560px) {
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .polaroid { max-width: 100%; }
+}
+
+/* ============ MODE HP: TANPA 3D AGAR SCROLL MULUS ============ */
+@media (max-width: 720px) {
+  .scene { perspective: none; }
+  .book { transform-style: flat; }
+  .page {
+    transform: none;
+    transition: transform 0.42s cubic-bezier(0.5, 0.1, 0.5, 1), opacity 0.42s ease;
+  }
+  .page.flipped {
+    transform: translateX(-38%) rotateZ(-3deg) scale(0.96);
+    opacity: 0;
+  }
+  .page.current { transform: none; opacity: 1; }
+  .page-inner p { font-size: 0.95rem; line-height: 1.8; }
+  .page-counter { bottom: 8px; }
+}
+
+/* Zona tap tepi layar untuk membalik halaman (mobile) */
+.tapzone { display: none; }
+@media (hover: none) and (pointer: coarse) {
+  .tapzone {
+    display: block;
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 16vw;
+    max-width: 140px;
+    z-index: 520;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .tapzone.tp { left: 0; }
+  .tapzone.tn { right: 0; }
 }
